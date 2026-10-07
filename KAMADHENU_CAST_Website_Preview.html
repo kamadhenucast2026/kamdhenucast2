@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="KAMADHENU CAST - Industrial material handling solutions including plastic pallets, pallet trucks, stackers, forklifts and platform trolleys.">
+  <title>KAMADHENU CAST | Material Handling Solutions</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+*{box-sizing:border-box;margin:0;padding:0}
+:root{--blue:#073b87;--blue2:#0b6fbd;--orange:#f4770b;--dark:#071425;--text:#1b2635;--muted:#657284;--light:#f4f7fb;--white:#fff}
+html{scroll-behavior:smooth}
+body{font-family:Inter,Arial,sans-serif;color:var(--text);line-height:1.6;background:#fff}
+a{text-decoration:none;color:inherit}
+.container{width:min(1160px,92%);margin:auto}
+.site-header{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.96);backdrop-filter:blur(12px);border-bottom:1px solid #e8edf4}
+.nav-wrap{height:82px;display:flex;align-items:center;justify-content:space-between;gap:30px}
+.brand img{width:235px;height:auto;display:block}
+.nav{display:flex;align-items:center;gap:27px;font-size:14px;font-weight:600}
+.nav a:hover{color:var(--blue2)}
+.nav-cta{background:var(--blue);color:#fff!important;padding:11px 18px;border-radius:8px}
+.menu-btn{display:none;border:0;background:none;font-size:27px}
+.hero{position:relative;overflow:hidden;background:linear-gradient(135deg,#f7fbff 0%,#eef5fc 60%,#fff 100%);padding:85px 0 75px}
+.hero:after{content:"";position:absolute;width:520px;height:520px;border-radius:50%;right:-220px;top:-170px;background:rgba(7,59,135,.05)}
+.hero-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:65px;align-items:center;position:relative;z-index:2}
+.eyebrow{font-size:12px;letter-spacing:2px;font-weight:800;color:var(--orange);margin-bottom:12px}
+.hero h1{font-size:clamp(42px,5.4vw,72px);line-height:1.05;letter-spacing:-2.5px;color:var(--dark);margin-bottom:23px}
+.hero h1 span{color:var(--blue2)}
+.hero-text{font-size:18px;color:var(--muted);max-width:650px;margin-bottom:30px}
+.hero-actions{display:flex;gap:13px;flex-wrap:wrap}
+.btn{display:inline-flex;align-items:center;justify-content:center;padding:14px 23px;border-radius:8px;font-weight:700;border:2px solid transparent;transition:.2s}
+.btn-primary{background:var(--orange);color:#fff}
+.btn-primary:hover{transform:translateY(-2px);filter:brightness(.96)}
+.btn-outline{border-color:#cdd8e6;color:var(--blue);background:#fff}
+.btn-outline:hover{border-color:var(--blue)}
+.btn-white{background:#fff;color:var(--blue);padding:13px 22px}
+.trust-row{display:flex;gap:35px;margin-top:43px}
+.trust-row div{display:flex;flex-direction:column}
+.trust-row strong{font-size:24px;color:var(--blue)}
+.trust-row span{font-size:12px;color:var(--muted)}
+.hero-card{background:linear-gradient(150deg,#0a438f,#082a59);border-radius:22px;min-height:440px;padding:30px;color:#fff;box-shadow:0 28px 60px rgba(5,38,82,.22);position:relative;overflow:hidden}
+.card-top{font-size:11px;letter-spacing:2px;font-weight:700;color:#a8d4ff}
+.card-title{font-size:30px;line-height:1.15;font-weight:800;max-width:310px;margin-top:10px}
+.equipment-art{height:250px;position:relative;margin-top:10px}
+.platform{position:absolute;left:16%;top:53%;width:68%;height:34px;background:#dbe7f2;border-radius:6px;transform:skew(-10deg);box-shadow:0 12px 0 rgba(0,0,0,.15)}
+.mast{position:absolute;left:38%;top:18%;height:190px;width:14px;background:#dbe7f2;border-radius:6px}
+.fork{position:absolute;left:44%;top:59%;height:12px;width:43%;background:#f4770b;border-radius:4px}
+.handle{position:absolute;left:34%;top:8%;height:100px;width:10px;background:#f4770b;border-radius:7px;transform:rotate(20deg);transform-origin:bottom}
+.wheel{position:absolute;bottom:13%;width:48px;height:48px;background:#101820;border:8px solid #aebdca;border-radius:50%}
+.wheel-a{left:21%}.wheel-b{right:18%}
+.card-bottom{position:absolute;bottom:25px;left:30px;right:30px;display:grid;grid-template-columns:1fr 1fr;gap:9px;font-size:12px;color:#dbe9f8}
+.card-bottom span{border:1px solid rgba(255,255,255,.16);border-radius:7px;padding:8px 10px;background:rgba(255,255,255,.05)}
+.strip{background:var(--blue);color:#fff}
+.strip-inner{min-height:58px;display:flex;align-items:center;justify-content:space-between;gap:18px;font-size:11px;letter-spacing:1.2px;font-weight:700}
+.strip i{height:5px;width:5px;border-radius:50%;background:var(--orange)}
+.section{padding:100px 0}
+.section-heading{max-width:720px;margin-bottom:45px}
+.section-heading h2,.about h2,.contact h2{font-size:clamp(32px,4vw,48px);line-height:1.1;letter-spacing:-1.3px;margin-bottom:15px;color:var(--dark)}
+.section-heading p,.about p,.contact>p{color:var(--muted);font-size:16px}
+.product-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:17px}
+.product-card{background:#fff;border:1px solid #e4eaf2;border-radius:14px;padding:25px;min-height:230px;display:flex;flex-direction:column;box-shadow:0 8px 25px rgba(18,44,75,.04);transition:.2s}
+.product-card:hover{transform:translateY(-5px);box-shadow:0 18px 40px rgba(18,44,75,.10);border-color:#cad7e7}
+.product-card.featured{grid-column:span 2;background:linear-gradient(135deg,#f1f7ff,#fff)}
+.product-icon{width:46px;height:46px;display:flex;align-items:center;justify-content:center;border-radius:10px;background:#edf5ff;color:var(--blue);font-size:22px;font-weight:800;margin-bottom:20px}
+.product-card h3{font-size:18px;margin-bottom:9px;color:var(--dark)}
+.product-card p{font-size:13px;color:var(--muted);line-height:1.6}
+.product-card a{margin-top:auto;color:var(--blue);font-size:13px;font-weight:800;padding-top:18px}
+.section-dark{background:var(--dark);color:#fff}
+.section-heading.light h2{color:#fff}.section-heading.light p{color:#b9c7d9}
+.industry-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}
+.industry{border:1px solid rgba(255,255,255,.12);padding:20px;border-radius:10px;background:rgba(255,255,255,.04);font-weight:700}
+.about{background:var(--light)}
+.about-grid{display:grid;grid-template-columns:1fr 1fr;gap:70px;align-items:start}
+.about p{margin-top:16px}
+.about-panel{background:#fff;border-radius:15px;padding:12px;box-shadow:0 20px 45px rgba(22,51,82,.08)}
+.about-stat{display:flex;gap:18px;align-items:center;padding:20px;border-bottom:1px solid #edf1f5}
+.about-stat:last-child{border-bottom:0}
+.about-stat strong{font-size:13px;color:var(--orange);letter-spacing:1px}
+.about-stat span{font-weight:700}
+.quote-banner{background:linear-gradient(100deg,var(--orange),#f28a27);color:#fff;padding:54px 0}
+.quote-inner{display:flex;align-items:center;justify-content:space-between;gap:30px}
+.quote-banner .eyebrow{color:#fff;opacity:.85}.quote-banner h2{font-size:38px;line-height:1.1;margin-bottom:8px}.quote-banner p{opacity:.9}
+.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:75px}
+.contact-list{margin-top:30px;display:grid;gap:12px}
+.contact-list a{display:flex;flex-direction:column;padding:16px 18px;border:1px solid #e2e8f0;border-radius:10px}
+.contact-list span{font-size:11px;text-transform:uppercase;letter-spacing:1px;color:var(--muted)}
+.contact-list strong{font-size:17px;color:var(--blue);margin-top:3px}
+.contact-form{display:grid;grid-template-columns:1fr 1fr;gap:12px;background:var(--light);padding:25px;border-radius:15px}
+.contact-form input,.contact-form select,.contact-form textarea{width:100%;border:1px solid #dbe3ed;border-radius:8px;padding:13px 14px;font:inherit;background:#fff;outline:none}
+.contact-form input:focus,.contact-form select:focus,.contact-form textarea:focus{border-color:var(--blue2)}
+.contact-form textarea,.contact-form button,.contact-form small{grid-column:1/-1}
+.contact-form small{font-size:11px;color:var(--muted)}
+footer{background:#050d18;color:#b8c5d3;padding-top:40px}
+.footer-inner{display:flex;justify-content:space-between;gap:30px;align-items:center;padding-bottom:30px}
+.footer-logo{width:220px;filter:brightness(0) invert(1);opacity:.9}
+.footer-inner p{font-size:12px;margin-top:5px}
+.footer-right{display:flex;flex-direction:column;align-items:flex-end;gap:6px;font-size:13px}
+.footer-right a:hover{color:#fff}
+.copyright{text-align:center;border-top:1px solid rgba(255,255,255,.08);padding:17px;font-size:11px}
+.floating-wa{position:fixed;right:22px;bottom:22px;z-index:60;width:54px;height:54px;border-radius:50%;display:flex;align-items:center;justify-content:center;background:#20b95a;color:#fff;font-weight:900;box-shadow:0 10px 25px rgba(0,0,0,.22)}
+@media(max-width:900px){.nav{display:none;position:absolute;left:0;right:0;top:82px;background:#fff;padding:20px 5%;flex-direction:column;align-items:stretch;border-bottom:1px solid #e5ebf2}.nav.open{display:flex}.menu-btn{display:block}.hero-grid,.about-grid,.contact-grid{grid-template-columns:1fr}.hero-card{min-height:380px}.product-grid{grid-template-columns:repeat(2,1fr)}.industry-grid{grid-template-columns:repeat(2,1fr)}.quote-inner{flex-direction:column;align-items:flex-start}.footer-inner{flex-direction:column;align-items:flex-start}.footer-right{align-items:flex-start}}
+@media(max-width:560px){.nav-wrap{height:70px}.nav{top:70px}.brand img{width:190px}.hero{padding:60px 0}.hero h1{letter-spacing:-1.5px}.trust-row{gap:17px;flex-wrap:wrap}.hero-card{padding:24px;min-height:350px}.section{padding:70px 0}.product-grid,.industry-grid{grid-template-columns:1fr}.product-card.featured{grid-column:span 1}.contact-form{grid-template-columns:1fr}.contact-form textarea,.contact-form button,.contact-form small{grid-column:1}.strip-inner{overflow:hidden;white-space:nowrap;justify-content:flex-start}.strip-inner span:nth-of-type(n+4),.strip-inner i:nth-of-type(n+4){display:none}}
+
+.contact-list strong{line-height:1.45}.product-card{min-height:245px}
+
+</style>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a class="brand" href="#home" aria-label="KAMADHENU CAST home">
+        <img src="logo.png" alt="KAMADHENU CAST logo">
+      </a>
+      <button class="menu-btn" aria-label="Open menu" aria-expanded="false">☰</button>
+      <nav class="nav">
+        <a href="#home">Home</a>
+        <a href="#products">Products</a>
+        <a href="#industries">Industries</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+        <a class="nav-cta" href="https://wa.me/919994108939?text=Hello%20KAMADHENU%20CAST%2C%20I%20need%20a%20quotation." target="_blank" rel="noopener">Get Quote</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="home">
+    <section class="hero">
+      <div class="hero-grid container">
+        <div class="hero-copy">
+          <div class="eyebrow">INDUSTRIAL MATERIAL HANDLING SOLUTIONS</div>
+          <h1>Move Materials <span>Smarter.</span> Work Better.</h1>
+          <p class="hero-text">
+            KAMADHENU CAST supplies practical material-handling products for factories,
+            warehouses, logistics operations and industrial workplaces.
+          </p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="https://wa.me/919994108939?text=Hello%20KAMADHENU%20CAST%2C%20I%20need%20a%20quotation." target="_blank" rel="noopener">WhatsApp Us</a>
+            <a class="btn btn-outline" href="#products">View Products</a>
+            <a class="btn btn-outline" href="catalog.pdf" target="_blank" rel="noopener">View Catalog</a>
+          </div>
+          <div class="trust-row">
+            <div><strong>12+</strong><span>Product & Service Areas</span></div>
+            <div><strong>24/7</strong><span>Enquiry Access</span></div>
+            <div><strong>B2B</strong><span>Industrial Focus</span></div>
+          </div>
+        </div>
+
+        <div class="hero-card">
+          <div class="card-top">KAMADHENU CAST</div>
+          <div class="card-title">Material Handling Equipment</div>
+          <div class="equipment-art">
+            <div class="wheel wheel-a"></div>
+            <div class="wheel wheel-b"></div>
+            <div class="fork"></div>
+            <div class="mast"></div>
+            <div class="handle"></div>
+            <div class="platform"></div>
+          </div>
+          <div class="card-bottom">
+            <span>Plastic Pallets</span>
+            <span>Pallet Trucks</span>
+            <span>Stackers</span>
+            <span>Forklifts</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="strip">
+      <div class="container strip-inner">
+        <span>WAREHOUSING</span><i></i>
+        <span>MANUFACTURING</span><i></i>
+        <span>LOGISTICS</span><i></i>
+        <span>FACTORIES</span><i></i>
+        <span>INDUSTRIAL OPERATIONS</span>
+      </div>
+    </section>
+
+    <section id="products" class="section">
+      <div class="container">
+        <div class="section-heading">
+          <div class="eyebrow">OUR PRODUCTS</div>
+          <h2>Material Handling Products</h2>
+          <p>Choose the right equipment for moving, lifting, storing and handling materials efficiently.</p>
+        </div>
+
+        <div class="product-grid">
+          <article class="product-card">
+            <div class="product-icon">▦</div>
+            <h3>Plastic Pallets</h3>
+            <p>Reusable pallet solutions for storage, movement and industrial material handling.</p>
+            <a href="#contact">Enquire →</a>
+          </article>
+          <article class="product-card">
+            <div class="product-icon">↔</div>
+            <h3>Hand Pallet Trucks</h3>
+            <p>Manual pallet movement equipment for warehouses, stores and production areas.</p>
+            <a href="#contact">Enquire →</a>
+          </article>
+          <article class="product-card">
+            <div class="product-icon">⚡</div>
+            <h3>Electric & Powered Pallet Trucks</h3>
+            <p>Electric and powered pallet truck solutions for higher-frequency material movement.</p>
+            <a href="#contact">Enquire →</a>
+          </article>
+          <article class="product-card">
+            <div class="product-icon">⇅</div>
+            <h3>Stackers</h3>
+            <p>Walkie, electric and counterbalance stackers for lifting and stacking operations.</p>
+            <a href="#contact">Enquire →</a>
+          </article>
+          <article class="product-card">
+            <div class="product-icon">▥</div>
+            <h3>Forklifts</h3>
+            <p>Electric and diesel forklift solutions covering a range of industrial capacities.</p>
+            <a href="#contact">Enquire →</a>
+          </article>
+          <article class="product-card">
+            <div class="product-icon">▱</div>
+            <h3>Warehouse Equipment</h3>
+            <p>Reach trucks, dock levelers and other equipment for warehouse operations.</p>
+            <a href="#contact">Enquire →</a>
+          </article>
+          <article class="product-card">
+            <div class="product-icon">▤</div>
+            <h3>Storage Solutions</h3>
+            <p>Plastic pallets, wooden boxes and pallets, and heavy-duty industrial racking systems.</p>
+            <a href="#contact">Enquire →</a>
+          </article>
+          <article class="product-card">
+            <div class="product-icon">↗</div>
+            <h3>Aerial Working Platforms</h3>
+            <p>Boom lifts, scissor lifts and telehandlers for elevated industrial work.</p>
+            <a href="#contact">Enquire →</a>
+          </article>
+          <article class="product-card">
+            <div class="product-icon">✦</div>
+            <h3>Industrial Air Solutions</h3>
+            <p>HVLS fans, grid ceiling fans and industrial-range mobile fan solutions.</p>
+            <a href="#contact">Enquire →</a>
+          </article>
+          <article class="product-card">
+            <div class="product-icon">⌘</div>
+            <h3>Engineering Services</h3>
+            <p>3D scanning, point-cloud processing, 3D modelling and engineering outputs.</p>
+            <a href="#contact">Discuss Requirement →</a>
+          </article>
+          <article class="product-card">
+            <div class="product-icon">⚙</div>
+            <h3>Manufacturing Solutions</h3>
+            <p>Composites, metal fabrication and 3D printing solutions shown in the catalog.</p>
+            <a href="#contact">Discuss Requirement →</a>
+          </article>
+          <article class="product-card featured">
+            <div class="product-icon">⚙</div>
+            <h3>Forklift Spare Parts</h3>
+            <p>Forklift spare-parts supply for maintenance and service requirements.</p>
+            <a href="#contact">Enquire →</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="industries" class="section section-dark">
+      <div class="container">
+        <div class="section-heading light">
+          <div class="eyebrow">APPLICATIONS</div>
+          <h2>Built Around Industrial Workflows</h2>
+          <p>Suitable for businesses that need dependable movement and handling of materials.</p>
+        </div>
+        <div class="industry-grid">
+          <div class="industry">Manufacturing</div>
+          <div class="industry">Warehousing</div>
+          <div class="industry">Textile & Garments</div>
+          <div class="industry">Automotive</div>
+          <div class="industry">Logistics</div>
+          <div class="industry">Food & FMCG</div>
+          <div class="industry">Engineering</div>
+          <div class="industry">Industrial Stores</div>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="section about">
+      <div class="container about-grid">
+        <div>
+          <div class="eyebrow">ABOUT KAMADHENU CAST</div>
+          <h2>Your Trust in Every Movements</h2>
+          <p>
+            KAMADHENU CAST is a dealer and supplier serving industrial customers with
+            material handling equipment, storage solutions, ventilation air solutions and
+            engineering services.
+          </p>
+          <p>
+            Our catalog covers forklifts, pallet trucks, stackers, storage systems, aerial
+            working platforms, industrial fans, engineering services, manufacturing solutions
+            and forklift spare parts. Tell us your application, capacity and quantity requirement
+            and we can help you identify a suitable product.
+          </p>
+        </div>
+        <div class="about-panel">
+          <div class="about-stat"><strong>01</strong><span>Understand your requirement</span></div>
+          <div class="about-stat"><strong>02</strong><span>Recommend a suitable product</span></div>
+          <div class="about-stat"><strong>03</strong><span>Share quotation & specifications</span></div>
+          <div class="about-stat"><strong>04</strong><span>Support your purchase decision</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="quote-banner">
+      <div class="container quote-inner">
+        <div>
+          <div class="eyebrow">NEED A QUOTATION?</div>
+          <h2>Tell us what you need.</h2>
+          <p>Send your product, quantity and application details on WhatsApp.</p>
+        </div>
+        <a class="btn btn-white" href="https://wa.me/919994108939?text=Hello%20KAMADHENU%20CAST%2C%20I%20need%20a%20quotation.%0AProduct%3A%20%0AQuantity%3A%20%0AApplication%3A" target="_blank" rel="noopener">Request a Quote</a>
+      </div>
+    </section>
+
+    <section id="contact" class="section contact">
+      <div class="container contact-grid">
+        <div>
+          <div class="eyebrow">CONTACT US</div>
+          <h2>Let's discuss your requirement.</h2>
+          <p>For product enquiries and quotations, contact KAMADHENU CAST directly.</p>
+          <div class="contact-list">
+            <a href="tel:+919994108939"><span>Phone / WhatsApp</span><strong>+91 99941 08939</strong></a>
+            <a href="mailto:kamadhenucast@gmail.com"><span>Email</span><strong>kamadhenucast@gmail.com</strong></a>
+<a href="#contact"><span>Address</span><strong>D.No-1/439, Shop No.G22, Siva Complex, Bodipalayam Road, Malumichampatty, Coimbatore</strong></a>
+          </div>
+        </div>
+        <form class="contact-form" id="quoteForm">
+          <input type="text" id="name" placeholder="Your Name" required>
+          <input type="text" id="company" placeholder="Company Name">
+          <input type="tel" id="phone" placeholder="Phone Number" required>
+          <select id="product" required>
+            <option value="">Select Product</option>
+            <option>Plastic Pallets</option>
+            <option>Hand Pallet Trucks</option>
+            <option>Hydraulic Pallet Trucks</option>
+            <option>Stackers</option>
+            <option>Forklifts</option>
+            <option>Platform Trolleys</option>
+            <option>Material Handling Equipment</option>
+            <option>Storage / Racking</option>
+            <option>HVLS / Industrial Fans</option>
+            <option>Engineering Services</option>
+            <option>Forklift Spare Parts</option>
+            <option>Other Requirement</option>
+          </select>
+          <textarea id="message" rows="5" placeholder="Quantity / size / capacity / application"></textarea>
+          <button class="btn btn-primary" type="submit">Send Enquiry on WhatsApp</button>
+          <small>Your enquiry will open in WhatsApp with the details filled in.</small>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container footer-inner">
+      <div>
+        <img src="logo.png" alt="KAMADHENU CAST" class="footer-logo">
+        <p>Industrial Material Handling Solutions</p>
+      </div>
+      <div class="footer-right">
+        <a href="tel:+919994108939">+91 99941 08939</a>
+        <a href="mailto:kamadhenucast@gmail.com">kamadhenucast@gmail.com</a>
+        <a href="catalog.pdf" target="_blank" rel="noopener">View Company Catalog</a>
+      </div>
+    </div>
+    <div class="copyright">© <span id="year"></span> KAMADHENU CAST. All rights reserved.</div>
+  </footer>
+
+  <a class="floating-wa" href="https://wa.me/919994108939?text=Hello%20KAMADHENU%20CAST%2C%20I%20need%20a%20quotation." target="_blank" rel="noopener" aria-label="WhatsApp">WA</a>
+  <script>
+const menuBtn = document.querySelector('.menu-btn');
+const nav = document.querySelector('.nav');
+
+menuBtn?.addEventListener('click', () => {
+  const open = nav.classList.toggle('open');
+  menuBtn.setAttribute('aria-expanded', String(open));
+});
+
+document.querySelectorAll('.nav a').forEach(link => {
+  link.addEventListener('click', () => nav.classList.remove('open'));
+});
+
+document.getElementById('year').textContent = new Date().getFullYear();
+
+document.getElementById('quoteForm').addEventListener('submit', function (e) {
+  e.preventDefault();
+  const name = document.getElementById('name').value.trim();
+  const company = document.getElementById('company').value.trim();
+  const phone = document.getElementById('phone').value.trim();
+  const product = document.getElementById('product').value;
+  const message = document.getElementById('message').value.trim();
+
+  const text = [
+    'Hello KAMADHENU CAST, I need a quotation.',
+    '',
+    `Name: ${name}`,
+    `Company: ${company || '-'}`,
+    `Phone: ${phone}`,
+    `Product: ${product}`,
+    `Requirement: ${message || '-'}`
+  ].join('\n');
+
+  window.open(`https://wa.me/919994108939?text=${encodeURIComponent(text)}`, '_blank');
+});
+
+</script>
+</body>
+</html>
